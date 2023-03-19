@@ -1,0 +1,18 @@
+version: 1.0
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    env:
+      APP_KEY: base64:bdj7+b/8qGg+Tda96jmFcQg1o9I49I2ilpFrFsa/slM=
+      APP_ENV: production
+      APP_DEBUG: false
+      APP_URL: https://<votre URL>
+      DB_CONNECTION: pgsql
+      DB_HOST: mel.db.elephantsql.com
+      DB_PORT: 5432
+      DB_DATABASE: tpseo
+      DB_USERNAME: tpseo
+      DB_PASSWORD: px6XT0keE5bARC8-DkMt4e8gBJv4NbJV
+      

@@ -1,3 +1,4 @@
+FROM php:7.4-apache
 WORKDIR /app
 COPY . /app
 RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader

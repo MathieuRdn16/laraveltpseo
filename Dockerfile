@@ -1,4 +1,4 @@
-FROM sandrokeil/php-node:7.4-16.13
+FROM php:7.4-apache
 WORKDIR /app
 COPY . /app
 RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
